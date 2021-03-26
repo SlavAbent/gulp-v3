@@ -1,0 +1,21 @@
+@color_green: #0e8bff;
+@color_black: #232323;
+
+.shadow(@x: 10px){
+    box-shadow: @x @x @x @color_black;
+}
+
+html, body{
+    margin: 0;
+}
+
+img{
+    min-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 860px){
+    body{
+        background-color: #eee;
+    }
+}

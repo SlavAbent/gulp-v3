@@ -1,0 +1,25 @@
+@columns = 12;
+
+@offset: 30px;
+@offset_one_side: @offset / 2;
+
+.size(@n){
+    width: calc(100% / columns * @n - @offset);
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 @offset_one_side;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    margin: @offset_one_side;
+    /* width: calc(100% / 12 * 3 - 30px); */
+    box-sizing: border-box;
+}
